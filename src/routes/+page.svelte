@@ -17,7 +17,7 @@
   let hawks = {
     name: 'Hawks',
     players: [
-      { name: 'Player 1', ballsFaced: ['.', '1', '.', '4'] },
+      { name: 'Player 1', onStrike: true, ballsFaced: ['.', '1', '.', '4'] },
       { name: 'Player 2', ballsFaced: [], howOut: 'bowled', outToBowler: 'W player 1' }, 
       { name: 'Player 3', ballsFaced: ['4', '6', '2'], howOut: 'caught W player 6', outToBowler: 'W player 2' }, 
       { name: 'Player 4', ballsFaced: [], oversBowled: [
@@ -52,6 +52,8 @@
 
 <style>
 
-
+footer, header, main {
+  font-family: Arial, Helvetica, Ubuntu, sans-serif;
+}
 
 </style>

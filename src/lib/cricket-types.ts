@@ -31,6 +31,7 @@ export class TeamModel {
 export class PlayerModel {
   constructor(
     public name: string,
+    public onStrike: boolean,
     public ballsFaced?: string[],
     public batNo?: number, 
     public howOut?: string,

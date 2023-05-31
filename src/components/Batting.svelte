@@ -52,9 +52,9 @@
     <tbody>
       {#if current && current.awayTeam}
         {#each current.awayTeam.players as player, i}
-            <tr>
+            <tr class={player.howOut == undefined ? 'notout' : 'out'}>
               <td contenteditable>{i+1}</td>
-              <td contenteditable>{player.name}</td>
+              <td contenteditable>{player.name} <span class="strike">{player.onStrike ? '*' : ''}</span></td>
               <td></td>
               <td></td>
               <td>
@@ -77,6 +77,9 @@
 <style>
 td, th {
   border: solid 1px darkslategray
+}
+tr.out {
+  background-color: #cccccc;
 }
 
 </style>
